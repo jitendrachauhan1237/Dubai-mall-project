@@ -1,123 +1,142 @@
-# Dubai Mall Sales Deck
+# 🚀 Dubai Mall Interactive Sales Deck
 
-A premium, cinematic, interactive sales deck web application for Dubai Mall using React, Vite, Tailwind CSS, Framer Motion, GSAP, and Lenis.
+🔗 Live Demo: [(https://dubai-mall-project-alpha.vercel.app/)]
 
-## Features
+---
 
-- **Video-First Experience**: Hero section with autoplay background video
-- **Smooth Animations**: Framer Motion for UI animations, GSAP for parallax effects
-- **Performance Optimized**: Lazy loading, optimized assets, Lighthouse 90+ ready
-- **Responsive Design**: Desktop and mobile optimized
-- **Accessibility**: Reduced motion support
+## 🧠 Overview
 
-## Tech Stack
+This project is a **cinematic, video-first interactive sales deck** built for Dubai Mall.
 
-- React 18
-- TypeScript
-- Vite
-- Tailwind CSS
-- Framer Motion
-- GSAP + ScrollTrigger
-- Lenis (smooth scrolling)
+It is designed as a **high-conversion B2B tool** for:
+- Retail leasing
+- Brand partnerships
+- Event sponsorships
 
-## Getting Started
+Unlike traditional websites, this experience replaces static PDFs and presentations with an **immersive, interactive storytelling platform**.
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
+---
 
-2. Start development server:
-   ```bash
-   npm run dev
-   ```
+## 🎯 Objective
 
-3. Build for production:
-   ```bash
-   npm run build
-   ```
+- Communicate scale, luxury, and commercial value instantly
+- Create emotional impact within seconds
+- Drive business actions like leasing and partnerships
+- Deliver a premium, cinematic experience
 
-## Project Structure
+---
 
-```
+## ✨ Key Features
+
+### 🎬 Video-First Experience
+- Fullscreen hero with autoplay background video
+- Scroll-aware playback control
+
+### 🔄 Interactive Storytelling
+- Horizontal scroll section powered by GSAP
+- Section-based narrative flow
+
+### ✨ Dynamic Typography
+- Animated rotating keywords (Framer Motion)
+- Smooth blur + fade transitions
+
+### ⚡ Smooth Performance
+- Lenis-based smooth scrolling
+- Optimized animations (no jank)
+
+### 📦 Performance Optimization
+- Lazy-loaded videos
+- Optimized assets
+- Lightweight rendering
+
+---
+
+## 🛠 Tech Stack
+
+- **React 19**
+- **Vite**
+- **Tailwind CSS 3**
+- **Framer Motion**
+- **GSAP (ScrollTrigger)**
+- **Lenis (Smooth Scroll)**
+
+---
+
+## 📁 Project Structure
+
+
 src/
-├── components/     # Reusable UI components
-├── sections/       # Page sections
-├── hooks/          # Custom React hooks
-├── lib/            # Utility libraries
-└── assets/         # Static assets
-```
+assets/
+images/
+videos/
 
-## Assets
+components/
+ui/
+shared/
 
-Placeholder assets are referenced in the code. Replace with actual Dubai Mall assets:
+hooks/
+useLenis.js
 
-- `/public/assets/hero-video.mp4` - Hero background video
-- `/public/assets/aquarium.mp4` - Aquarium video
-- `/public/assets/dining.jpg` - Dining image
-- `/public/assets/attractions.jpg` - Attractions image
-- `/public/assets/brands/*.png` - Brand logos
+context/
+ReadyContext.jsx
 
-## Performance Notes
+pages/
+home/
+sections/
+Hero.jsx
+Scale.jsx
+Retail.jsx
+Experience.jsx
+Opportunity.jsx
 
-- Videos are lazy loaded and paused when out of viewport
-- GSAP animations use `will-change` sparingly
-- Lenis provides smooth scrolling without jank
-- Images should be optimized to WebP/AVIF formats
+App.jsx
 
-## AI Integration
 
-The Experience section includes an "AI Vision" placeholder for future AI-generated content or insights.
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ Installation & Setup
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+```bash
+git clone https://github.com/jitendrachauhan1237/Dubai-mall-project.git
+cd your-repo
+npm install
+npm run dev
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+📦 Build
+npm run build
+npm run preview
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+
+
+⚡ Performance Notes
+Videos are compressed and optimized for web playback
+Animations use GPU-friendly properties (transform, opacity)
+Scroll interactions are synchronized using GSAP + Lenis
+Designed to achieve high Lighthouse performance
+
+
+
+🎬 Inspiration
+Apple Product Pages
+Tesla Website
+Dubai Mall Official Website
+Universal Studios Experience
+
+
+🎯 Product Thinking
+
+This project is built as a digital sales tool, not just a UI demo.
+
+Every section is designed to:
+
+Highlight scale and footfall
+Showcase retail and luxury positioning
+Emphasize experiential value
+Drive toward business action
+📬 Contact
+
+For collaboration or discussion:
+👉 chauhanjitendra1527@gmail.com / LinkedIn :https://www.linkedin.com/in/jitendra-chauhan-107122346]
+
+Built as part of an advanced frontend + interactive design assignment focused on storytelling, performance, and product thinking.
