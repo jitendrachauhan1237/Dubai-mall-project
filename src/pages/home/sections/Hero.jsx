@@ -1,7 +1,7 @@
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
-import { VideoBlock } from "../../../components/shared/VideoBlock";
-import { PremiumButton } from "../../../components/shared/PremiumButton";
+import { VideoBlock } from "../../../components/ui/VideoBlock";
+import { PremiumButton } from "../../../components/ui/PremiumButton";
 
 /* 🎬 Animation System */
 const createContainerVariants = (isReady) => ({
@@ -67,10 +67,10 @@ export function Hero({ isReady = false }) {
       <div className="absolute inset-0 z-0">
         <VideoBlock
           src="/assets/hero-video.mp4"
-          poster="/assets/hero-poster.svg"
           className="w-full h-full object-cover"
           isPlaying={isPlaying}
           isMuted={isMuted}
+          priority={true}
         />
       </div>
 
@@ -91,6 +91,7 @@ export function Hero({ isReady = false }) {
           animate={isReady ? "show" : "hidden"}
         >
           <motion.span
+            style={{ willChange: "filter, transform, opacity" }}
             variants={fadeUp}
             className="inline-block text-[10px] md:text-xs font-bold text-white/60"
           >
@@ -99,6 +100,7 @@ export function Hero({ isReady = false }) {
 
           {/* 🔥 HERO TEXT WITH ROTATING WORD */}
           <motion.h1
+            style={{ willChange: "filter, transform, opacity" }}
             variants={fadeUp}
             className="text-5xl md:text-7xl lg:text-9xl font-serif leading-[0.9] tracking-tighter sm:mb-10"
           >
@@ -115,6 +117,7 @@ export function Hero({ isReady = false }) {
                     duration: 0.6,
                     ease: [0.22, 1, 0.36, 1],
                   }}
+                 style={{ willChange: "filter, transform, opacity" }}
                  className="absolute inset-0 flex items-center justify-center"
                 >
                   {words[index]}
@@ -123,13 +126,14 @@ export function Hero({ isReady = false }) {
             </span>
           </motion.h1>
 
-          <motion.div variants={fadeUp} className="flex justify-center">
+          <motion.div variants={fadeUp} style={{ willChange: "filter, transform, opacity" }} className="flex justify-center">
             <p className="text-base md:text-lg text-white/70 max-w-xl font-sans leading-relaxed">
               Experience where global luxury and architectural scale converge to create a world-class commercial platform for brand growth.
             </p>
           </motion.div>
 
           <motion.div
+            style={{ willChange: "filter, transform, opacity" }}
             variants={fadeUp}
             className="mt-12 flex flex-row justify-center gap-4"
           >

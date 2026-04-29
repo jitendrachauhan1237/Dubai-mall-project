@@ -1,14 +1,14 @@
 export function Footer() {
   return (
     <footer className="border-t border-slate-900/10 bg-[#0a0a0a] text-white overflow-hidden">
-      
+
       {/* TOP CONTENT */}
-      <div className="mx-auto max-w-7xl px-6 py-16 grid gap-10 md:grid-cols-3">
+      <div className="grid gap-10 px-6 py-16 mx-auto max-w-7xl md:grid-cols-3">
         <div>
           <p className="text-xs uppercase tracking-[0.35em] text-slate-500 mb-4">
             Leasing & Partnerships
           </p>
-          <p className="text-sm leading-7 text-slate-300 mb-6">
+          <p className="mb-6 text-sm leading-7 text-slate-300">
             Reach the commercial team for brand placement, sponsorship, and event opportunities at Dubai Mall.
           </p>
           <p className="text-sm text-slate-300">leasing@thedubaimall.com</p>
@@ -38,7 +38,7 @@ export function Footer() {
 
       {/* FULL WIDTH IMAGE (EDGE TO EDGE) */}
       <div className="relative w-screen left-1/2 right-1/2 -ml-[50vw]  -mr-[50vw]">
-        
+
         <img
           src="/assets/footer-asset.png"
           alt="Dubai Mall - Premium Retail Destination"
@@ -46,7 +46,7 @@ export function Footer() {
           decoding="async"
           width="1920"
           height="400"
-          className="w-full  h-fit object-cover"
+          className="object-cover w-full h-fit grayscale-50"
         />
       </div>
 

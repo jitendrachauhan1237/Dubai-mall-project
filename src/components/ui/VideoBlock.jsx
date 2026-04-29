@@ -9,16 +9,18 @@ export function VideoBlock({
   isMuted = true,
   loop = true,
   playsInline = true,
+  priority = false,
 }) {
   const videoRef = useRef(null);
   const { ref, isInView } = useInView({ threshold: 0.2 });
-  const [loadedSrc, setLoadedSrc] = useState("");
+  const [loadedSrc, setLoadedSrc] = useState(priority ? src : "");
 
   useEffect(() => {
+    if (priority) return;
     if (isInView && !loadedSrc) {
       setLoadedSrc(src);
     }
-  }, [isInView, loadedSrc, src]);
+  }, [isInView, loadedSrc, src, priority]);
 
   useEffect(() => {
     const video = videoRef.current;

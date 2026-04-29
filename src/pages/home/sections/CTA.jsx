@@ -1,4 +1,4 @@
-import { PremiumButton } from '../../../components/shared/PremiumButton';
+import { PremiumButton } from '../../../components/ui/PremiumButton';
 
 export function FinalCTA() {
   return (

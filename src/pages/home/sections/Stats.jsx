@@ -1,6 +1,6 @@
 import { motion, useInView, animate } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import { PremiumButton } from '../../../components/shared/PremiumButton';
+import { PremiumButton } from '../../../components/ui/PremiumButton';
 
 const stats = [
   { value: 100, label: 'Annual Visitors', suffix: 'M+' },

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { PremiumButton } from '../../../components/shared/PremiumButton';
+import { PremiumButton } from '../../../components/ui/PremiumButton';
 
 export function Events({ isReady = false }) {
   // Stats data array for cleaner JSX
