@@ -62,38 +62,6 @@ Unlike traditional websites, this experience replaces static PDFs and presentati
 
 ---
 
-## 📁 Project Structure
-
-
-src/
-assets/
-images/
-videos/
-
-components/
-ui/
-shared/
-
-hooks/
-useLenis.js
-
-context/
-ReadyContext.jsx
-
-pages/
-home/
-sections/
-Hero.jsx
-Scale.jsx
-Retail.jsx
-Experience.jsx
-Opportunity.jsx
-
-App.jsx
-
-
----
-
 ## ⚙️ Installation & Setup
 
 ```bash
