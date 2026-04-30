@@ -108,3 +108,13 @@ For collaboration or discussion:
 👉 chauhanjitendra1527@gmail.com / LinkedIn :https://www.linkedin.com/in/jitendra-chauhan-107122346]
 
 Built as part of an advanced frontend + interactive design assignment focused on storytelling, performance, and product thinking.
+
+
+## 🤖 AI Usage
+
+AI tools were used to:
+- Explore interaction patterns and animation ideas
+- Refine UI structure and storytelling flow
+- Accelerate iteration during development
+
+All final decisions, implementation, and optimizations were manually refined to ensure production-level quality and performance.
