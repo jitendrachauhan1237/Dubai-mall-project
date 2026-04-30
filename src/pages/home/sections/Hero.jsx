@@ -67,7 +67,7 @@ export function Hero({ isReady = false }) {
       <div className="absolute inset-0 z-0">
         <VideoBlock
           src="/assets/hero-video.mp4"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover "
           isPlaying={isPlaying}
           isMuted={isMuted}
           priority={true}
@@ -75,7 +75,7 @@ export function Hero({ isReady = false }) {
       </div>
 
       {/* 🌑 Overlay */}
-      <div className="absolute inset-0 z-10 pointer-events-none">
+      <div className="absolute inset-0 z-10 pointer-events-none backdrop-blur-[1.2px]">
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/80" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40" />
       </div>
