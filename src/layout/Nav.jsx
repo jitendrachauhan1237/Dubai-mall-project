@@ -160,7 +160,7 @@ function NavLink({ label, onClick }) {
   return (
     <button
       onClick={onClick}
-      className="relative py-1 text-[11px] font-bold uppercase tracking-widest text-slate-600 hover:text-black transition-colors group"
+      className="relative py-1 text-sm font-semibold text-slate-900 hover:text-black transition-colors group"
     >
       {label}
       <span className="absolute bottom-0 left-0 w-0 h-[1.5px] bg-black transition-all duration-300 group-hover:w-full" />

@@ -88,7 +88,7 @@ useEffect(() => {
 
   return (
     <section id="experience" ref={triggerRef} className="py-40 bg-white overflow-hidden">
-      <div className="px-6 mb-20 text-center">
+      <div className="px-6 mb-20 text-left sm:text-center">
         <motion.span className="text-[10px] font-bold tracking-[0.8em] text-slate-500 uppercase block mb-4">
           World Class Destinations
         </motion.span>

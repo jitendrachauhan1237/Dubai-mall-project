@@ -3,7 +3,7 @@ import { PremiumButton } from '../../../components/ui/PremiumButton';
 export function FinalCTA() {
   return (
     <section id="contact" className="py-32 bg-[#0a0a0a] text-white">
-      <div className="max-w-5xl mx-auto px-6 text-center">
+      <div className="max-w-5xl mx-auto px-6 sm:text-center">
         <span className="text-[10px] font-bold tracking-[0.5em] uppercase text-slate-400 mb-4 inline-block">
           Final Call
         </span>

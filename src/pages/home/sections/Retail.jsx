@@ -47,6 +47,7 @@ export function Retail({ isReady = false }) {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            viewport={{ once: true }}
           >
             <span className="text-[10px] font-bold tracking-[0.8em] text-white/50 uppercase block mb-6">
               The Commercial Stage
@@ -60,6 +61,7 @@ export function Retail({ isReady = false }) {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 1 }}
+            viewport={{ once: true }}
             className="space-y-8 border-l border-white/10 pl-10"
           >
             <p className="text-xl text-slate-400 font-light leading-relaxed">
@@ -100,7 +102,9 @@ function BrandCard({ brand, index }) {
       transition={{ duration: 0.6, delay: index * 0.08 }}
       className={`group relative overflow-hidden bg-[#111] border border-white/5 rounded-sm cursor-pointer ${
         isLarge ? 'md:col-span-2 aspect-[16/9]' : 'aspect-[4/5]'
+        
       }`}
+     viewport={{ once: true }}
     >
       {/* Background Image - Revealed on Hover */}
       <img 

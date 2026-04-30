@@ -11,7 +11,7 @@ export function PremiumButton({
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       href={href}
-      className={`group relative px-12 py-5 bg-gray-800 text-white overflow-hidden rounded-full inline-block ${className}`}
+      className={`group relative px-12 py-5 bg-gray-800 text-white text-center overflow-hidden rounded-full inline-block ${className}`}
     >
       {/* 1. The White Background Overlay (Slide-up effect) */}
       <div className="absolute inset-0 bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[0.16,1,0.3,1]" />
